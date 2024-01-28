@@ -1,4 +1,6 @@
-package main
+package launchpad_mini_screen
+
+type Grid [8][8]uint8
 
 const (
 	G uint8 = 56
@@ -7,6 +9,4 @@ const (
 	Y uint8 = 59
 )
 
-type grid []string
-
-// note = x*16 + y
+var EMPTY_GRID Grid
