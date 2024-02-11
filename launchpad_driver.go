@@ -19,7 +19,7 @@ type LaunchpadDriver struct {
 
 func NewLaunchpadDriver(deviceName string, channel uint8) (*LaunchpadDriver, error) {
 	if deviceName == "" {
-		deviceName = "Launchpad Mini MIDI 1"
+		deviceName = LPD_MINI
 	}
 	out, err := midi.FindOutPort(deviceName)
 	if err != nil {
@@ -54,6 +54,9 @@ func (lpd *LaunchpadDriver) RenderGrid(g Grid) error {
 			}
 		}
 	}
+	lpd.Mu.Lock()
+	lpd.State = g
+	lpd.Mu.Unlock()
 	return nil
 }
 
