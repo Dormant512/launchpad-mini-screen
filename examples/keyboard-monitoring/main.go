@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
+	lms "github.com/Dormant512/launchpad-mini-screen"
 	"github.com/MarinX/keylogger"
-	lms "github.com/launchpad-mini-screen"
 	_ "gitlab.com/gomidi/midi/v2/drivers/portmididrv" // registers driver
 	"log"
 	"os"

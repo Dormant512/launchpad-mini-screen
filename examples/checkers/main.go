@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	lms "github.com/launchpad-mini-screen"
+	lms "github.com/Dormant512/launchpad-mini-screen"
 	"log"
 	"strings"
 )

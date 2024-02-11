@@ -1,7 +1,7 @@
 package main
 
 import (
-	lms "github.com/launchpad-mini-screen"
+	lms "github.com/Dormant512/launchpad-mini-screen"
 	"log"
 	"time"
 )
